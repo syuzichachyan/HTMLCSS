@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Homework 4</title>
+</head>
+<body>
+<header style="display: flex;justify-content: space-between; border-bottom: 1px solid black">
+    <a href="index.html">
+        <img alt="logo" height="24" src="images/logo.png" width="168"/>
+    </a>
+    <div>
+        <img alt="user" height="32" src="images/user.png" width="32"/>
+        <label>
+            <select name="user" style="width: 100px">
+                <option value="log out">Log Out</option>
+            </select>
+        </label>
+    </div>
+</header>
+<main>
+    <h2>
+        Become a Tutor
+    </h2>
+    <section>
+        <p> 2 steps left</p>
+        <div style="display: flex;gap: 20px">
+            <div style="width: 200px;height: 2px;background-color: #8B34F4"></div>
+            <div style="width: 200px;height: 2px;background-color: #DFDFDF"></div>
+            <div style="width: 200px;height: 2px;background-color: #DFDFDF"></div>
+        </div>
+        <h3>
+            Verify your identity and experience
+        </h3>
+        <p>The documents will be reviewed by the Uplearn team and stored securely in accordance with our <a
+                href="index.html">Privacy
+            Policy</a>.</p>
+        <form>
+            <div>
+                <label>
+                    First name
+                    <input name='firstName' placeholder="First Name" type="text" value="Jennifer">
+                </label>
+            </div>
+            <div>
+                <label for="lastName"> Last name</label>
+                <input id="lastName" name='lastName' placeholder="Last Name" type="text" value="Smith">
+            </div>
+            <div>
+                <label for="phoneNumber">
+                    Phone number
+                    <select>
+                        <option style="background-image: url(images/flag.svg)" value="+1">
+                            +1
+                        </option>
+                    </select>
+                </label>
+                <input id="phoneNumber" maxlength="8" name='phoneNumber' placeholder="Phone Number" type="tel"
+                       value="12346789">
+            </div>
+            <p>Upload your diploma/unofficial transcripts. If you are currently a student, upload your transcripts.</p>
+            <label style="border: 1px solid black">
+                <img alt="upload" height="13" src="images/upload.svg" width="8">
+                <span>Click here to upload or drag and drop</span>
+                <span> (.jpg, .png up to 10MB)</span>
+                <input type="file">
+            </label>
+            <button disabled type="button">
+                Continue
+                <img alt="continue" height="20" src="images/next.svg" width="20">
+            </button>
+        </form>
+    </section>
+    <section>
+        <h3>Example</h3>
+        <figure style="display: flex">
+            <img alt="user" height="148" src="images/user.png" width="148"/>
+            <figcaption>
+                <h2>Jenifer Morgan</h2>
+                <p>BA in English from University of Minnesota</p>
+                <div>
+                    <span>4.0</span>
+                    <img alt="star" height="20" src="images/star.svg" width="20">
+                    <img alt="star" height="20" src="images/star.svg" width="20">
+                    <img alt="star" height="20" src="images/star.svg" width="20">
+                    <img alt="star" height="20" src="images/star.svg" width="20">
+                    <img alt="star" height="20" src="images/star.svg" width="20">
+                    <span>(1)</span>
+                </div>
+                <div>
+                    <img alt="verified" height="20" src="images/verified.svg" width="20">
+                    <span>Credentials verified</span>
+                </div>
+                <div>
+                    <img alt="checked" height="20" src="images/checked.svg" width="20">
+                    <span>Background checked</span>
+                </div>
+            </figcaption>
+        </figure>
+    </section>
+</main>
+</body>
+</html>
