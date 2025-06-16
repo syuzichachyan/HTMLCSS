@@ -1,0 +1,38 @@
+:root {
+    font-family: Times, "Times New Roman", Georgia, serif;
+    box-sizing: border-box;
+}
+
+*, ::after, ::before {
+    box-sizing: inherit;
+    padding: 0;
+    margin: 0;
+}
+
+body * + * {
+    margin-top: 1rem;
+}
+
+
+.main {
+    display: grid;
+    grid-template-columns: 70% 30%;
+}
+
+.main-container {
+    padding: 30px;
+    background-color: yellow;
+}
+
+.main-wrapper {
+    padding: 0 1rem;
+    background-color: #c5c5c5;
+}
+
+.header {
+    background-color: white;
+}
+
+.btn-primary {
+    background-color: blue;
+}
