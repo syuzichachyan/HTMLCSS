@@ -8,13 +8,15 @@
     <script crossorigin="anonymous" src="https://kit.fontawesome.com/78af0f5a26.js"></script>
 </head>
 <body>
-<article class="main-article">
-    <p>Hey the snow is starting in 15 days</p>
-    <div class="main-article-buttons">
-        <a class="contact-us" href="#">Contact us now</a>
-        <i class="fa-solid fa-flag-usa"></i>
+<section class="main-article">
+    <div class="main-article-group">
+        <p>Hey the snow is starting in 15 days</p>
+        <div class="main-article-buttons">
+            <a class="contact-us" href="#">Contact us now</a>
+            <i class="fa-solid fa-flag-usa"></i>
+        </div>
     </div>
-</article>
+</section>
 <header>
     <nav class="header-nav">
         <a class="header-nav-logo" href="#"><img alt="logo" src="images"></a>
@@ -38,30 +40,29 @@
     </nav>
 </header>
 <main>
-    <!--    <img alt="event" src="images/mainEvent.jpg" width="100%"/>-->
+    <div class="main-event"></div>
     <section class="event-section">
         <ul class="event-list">
             <li>
-                <img alt="event" src="images/event.png" width="100%"/>
+                <img alt="event" class="event-img" height="183" src="images/event.png" width="275"/>
             </li>
             <li>
-                <img alt="event" src="images/event.png" width="100%"/>
+                <img alt="event" class="event-img" height="183" src="images/event.png" width="275"/>
             </li>
             <li>
-                <img alt="event" src="images/event.png" width="100%"/>
+                <img alt="event" class="event-img" height="183" src="images/event.png" width="275"/>
             </li>
             <li>
-                <img alt="event" src="images/event.png" width="100%"/>
+                <img alt="event" class="event-img" height="183" src="images/event.png" width="275"/>
             </li>
         </ul>
         <div class="event-description">
             <div>
-                <h2>
+                <h2 class="event-section-title">
                     Thee amazing event is coming soon
                 </h2>
-                <p>lorem` ipsum dolor <a class="event-section-nav-item" href="index.html">Home</a> amet, consectetur
-                    adipisicing
-                    elit.
+                <p class="event-section-details">lorem` ipsum dolor <a class="event-section-nav-item" href="index.html">Home</a>
+                    amet, consectetur adipisicing elit.
                 </p>
                 <p>
                     lorem` ipsum dolorsdsdasdas Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ipsum,
@@ -74,14 +75,76 @@
                     <i class="fa-solid fa-location-dot"></i>
                     <h3>Vialt Us</h3>
                 </div>
-                <address>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</address>
-                <div>
+                <address>Lorem ipsum doloLorem ipsum dolor sit amet, consectetur adipisicing elitr sit amet, consectetur
+                    adipisicing elit.
+                </address>
+                <div class="directions">
                     <span>Need Directions</span>
                     <i class="fa-solid fa-location-dot"></i>
                 </div>
             </div>
         </div>
+    </section>
+    <section class="venture-section">
+        <ul class="venture-list">
+            <li>
+                <figure>
+                    <img alt="venture" height="183" src="images/event.png" width="275"/>
+                    <figcaption class="venture-description">
+                        <div class="venture-purchase-wrapper">
+                            <button class="btn-primary" type="button"> Purchase Tickets</button>
+                        </div>
+                        <div>
+                            <h2>Radio City Musical Hall</h2>
 
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium alias eligendi
+                                error exercitationem illum iste iure optio quidem ratione tempora? Accusantium aliquid
+                                corporis in incidunt, labore nesciunt omnis ratione voluptate?</p>
+                            <div class="venture-purchase-statistics-wrapper">
+                                <div class="venture-purchase-statistics">
+                                    <i class="fa-solid fa-flag-usa"></i>
+                                    <span>250</span>
+                                </div>
+                                <div class="venture-purchase-statistics">
+                                    <i class="fa-solid fa-flag-usa"></i>
+                                    <span>250</span>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </figcaption>
+                </figure>
+            </li>
+            <li>
+                <figure>
+                    <img alt="venture" height="183" src="images/event.png" width="275"/>
+                    <figcaption>
+                        <div class="venture-purchase-wrapper">
+                            <button class="btn-primary" type="button"> Purchase Tickets</button>
+                        </div>
+                        <div>
+
+                        </div>
+
+                    </figcaption>
+                </figure>
+            </li>
+            <li>
+                <figure>
+                    <img alt="venture" height="183" src="images/event.png" width="275"/>
+                    <figcaption>
+                        <div class="venture-purchase-wrapper">
+                            <button class="btn-primary" type="button"> Purchase Tickets</button>
+                        </div>
+                        <div>
+
+                        </div>
+
+                    </figcaption>
+                </figure>
+            </li>
+        </ul>
 
     </section>
 </main>
