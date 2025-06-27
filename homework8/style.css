@@ -273,3 +273,14 @@ ul li {
     background-color: #272323;
     color: inherit;
 }
+
+.footer{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-item-title{
+    margin: 1rem 0 ;
+}
