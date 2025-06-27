@@ -144,6 +144,7 @@ ul li {
 .btn-rotate-wrapper {
     display: flex;
     background-color: grey;
+    width: min-content;
 }
 
 .btn-rotate {
@@ -216,11 +217,15 @@ ul li {
 
 .more-event-section-content {
     display: flex;
-    margin-inline: 5% 10%;
+    width: 100%;
+    /* gap: 4%; */
 }
 
 .more-event-list {
     display: flex;
+    justify-content: space-between;
+    width: inherit;
+    margin: 10% 10% 10% 4%;
 }
 
 .more-event-list img {
@@ -230,4 +235,6 @@ ul li {
 }
 
 .more-event-list li {
+    max-width: 30%;
+    flex: 1 1 auto;
 }
