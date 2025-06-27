@@ -218,7 +218,6 @@ ul li {
 .more-event-section-content {
     display: flex;
     width: 100%;
-    /* gap: 4%; */
 }
 
 .more-event-list {
@@ -237,4 +236,40 @@ ul li {
 .more-event-list li {
     max-width: 30%;
     flex: 1 1 auto;
+}
+
+.newsletters-subscribe{
+    color: white;
+    padding: 1% 10% 1% 12%;
+    background-color: #504d4d;
+}
+
+.newsletters-subscribe form{
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+.newsletters-subscribe-item{
+    width: -webkit-fill-available;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.newsletters-subscribe-field{
+    background-color: inherit;
+    border-width: 0 0 1px 0;
+    outline: 0;
+    max-width: 30rem;
+    flex: 1 1 auto;
+    color: inherit;
+}
+.newsletters-subscribe-field input::placeholder{
+    color: inherit;
+}
+
+.newsletters-subscribe input[type=submit]{
+    padding: 0.5rem 2rem;
+    background-color: #272323;
+    color: inherit;
 }
