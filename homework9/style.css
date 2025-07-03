@@ -18,6 +18,11 @@ ul li {
     list-style-type: none;
 }
 
+.flex-gap-16 {
+    display: flex;
+    gap: 16px;
+}
+
 header {
     height: 63px;
     display: flex;
@@ -27,9 +32,7 @@ header {
 }
 
 .header-tutor {
-    display: flex;
     align-items: center;
-    gap: 16px;
     height: 100%;
 }
 
@@ -43,8 +46,6 @@ header {
 }
 
 .header-avatar {
-    display: flex;
-    gap: 16px;
     border: 0;
     background-color: transparent;
     height: 100%;
@@ -93,8 +94,8 @@ main {
     width: auto;
 }
 
-.tutor-section {
-    padding-block: 32px;
+.section {
+    margin-block: 32px;
 }
 
 .tutor-skills {
@@ -164,8 +165,6 @@ main {
 }
 
 .tutor-data-verification-list {
-    display: flex;
-    gap: 16px;
     padding: 8px;
 }
 
@@ -190,18 +189,8 @@ ezr chimaca vonc gunavorem
 .tutor-data-verification-icon {
 }
 
-.language-section {
-    padding: 16px;
-}
-
-.language-section-header {
-    margin-bottom: 16px;
-}
-
 .subjects-taught-item {
-    display: flex;
     flex-direction: column;
-    gap: 16px;
     padding: 16px;
     border-radius: 16px;
     background-color: #EAEFFF;
@@ -227,11 +216,26 @@ ezr chimaca vonc gunavorem
     justify-content: center;
 }
 
-.subjects-taught-header {
+.section-header {
     margin-bottom: 16px;
 }
 
-.subjects-taught {
-    padding: 16px;
+.teaching-hours-item {
+    display: flex;
+    gap: 32px;
+    border-bottom: 1px solid #DFDFDF;
+    flex: 1 1 30%;
+    padding-bottom: 8px;
+}
+
+.teaching-hours {
+    flex-direction: column;
+    white-space: nowrap;
+}
+
+.teaching-hours-list {
+    display: flex;
+    gap: 32px;
+    flex-wrap: wrap;
 }
 
