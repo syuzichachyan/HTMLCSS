@@ -239,3 +239,29 @@ ezr chimaca vonc gunavorem
     flex-wrap: wrap;
 }
 
+.reviewer-avatar {
+    height: 96px;
+    width: auto;
+    border-radius: 50%;
+    margin-top: -30px;
+}
+
+.reviewer-item {
+    padding: 16px;
+    text-align: center;
+    flex: 1 1 30%;
+    background-color: #F8F8F8;
+}
+
+.reviewer-name {
+    margin-block: 16px
+}
+
+.view-reviewers {
+    display: block;
+    margin: 32px auto;
+    border: 1px solid #8E8E8E;
+    padding: 12px;
+    border-radius: 8px;
+    background-color: white;
+}
