@@ -298,3 +298,41 @@ footer {
     font-size: 14px;
     font-weight: 400;
 }
+
+.btn {
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.btn-primary {
+    background-color: #8337DF;
+    padding: 14px;
+    border-radius: 8px;
+    color: white;
+    font-size: 18px;
+}
+
+.btn-secondary {
+    font-size: 16px;
+    background-color: white;
+    border: 1px solid #8337DF;
+    color: #8337DF;
+    padding: 12px;
+    border-radius: 8px;
+
+}
+
+.tutor-buttons-container {
+    flex-direction: column;
+}
+
+.btn-icon {
+    display: flex;
+    gap: 8px;
+}
+
+.tutor-info-container {
+    justify-content: space-between;
+}
