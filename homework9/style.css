@@ -173,10 +173,6 @@ main, footer {
     color: #8E8E8E
 }
 
-.tutor-data-verification-list {
-    padding: 8px;
-}
-
 .tutor-data-verification-list-item {
     border-radius: 16px;
     display: flex;
@@ -326,6 +322,7 @@ footer {
 
 .tutor-buttons-container {
     flex-direction: column;
+    margin: 0 auto;
 }
 
 .btn-icon {
@@ -335,4 +332,5 @@ footer {
 
 .tutor-info-container {
     justify-content: space-between;
+    margin-bottom: 16px;
 }
