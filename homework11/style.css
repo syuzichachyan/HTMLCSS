@@ -40,7 +40,7 @@ ul li {
     display:  flex;
 }
 
-.header-container{
+.header-section{
     justify-content: space-between;
     padding: 20px 45px;
     align-items: center;
@@ -62,10 +62,6 @@ ul li {
 .reg-btn{
     font-size: 18px;
     padding: 12px 64px;
-}
-
-.hero-container{
-    flex:1
 }
 
 .hero-badge{
@@ -99,10 +95,27 @@ ul li {
     margin-top: 64px;
 }
 
+.hero-image{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    aspect-ratio: 1/1;
+}
+
 .hero-btn-secondary{
     background-color: white;
     color: var(--primary-color);
     border: 1px solid var(--primary-color);
     gap: 8px;
     align-items: center;
+}
+
+.hero-section{
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.hero-section-item{
+    flex: 1 1 50%;
 }
