@@ -1,0 +1,40 @@
+:root {
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+*, ::before, ::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.header-container {
+    justify-content: space-between;
+    gap: 14%;
+}
+
+.header-nav {flex: 1;}
+
+.header-nav-links {
+    gap: 3%;
+}
+
+.flex {
+    display: flex;
+}
+
+/*a {*/
+/*    text-decoration: none;*/
+/*    color: inherit;*/
+/*}*/
+
+ul li {
+    list-style-type: none;
+}
