@@ -97,18 +97,18 @@ img {
     border-radius: 10px;
 }
 
-.hero-btn {
+.btn-group-item {
     padding: 12px 48px;
     font-size: 20px;
 }
 
-.hero-btn-group {
+.btn-group {
     gap: 24px;
     margin-top: 64px;
 }
 
-.hero-btn-secondary {
-    background-color: white;
+.btn-group-item-secondary {
+    background-color: transparent;
     color: var(--primary-color);
     border: 1px solid var(--primary-color);
     gap: 8px;
@@ -501,6 +501,28 @@ img {
 .footer-links {
     flex: 2;
     max-width: 680px;
+}
+
+.book-consultation-section {
+    background-image: url(images/doctor.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 160px 60px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.book-heading {
+    font-size: 80px;
+    font-weight: 500;
+    color: white;
+}
+
+.btn-group-item-secondary-white {
+    color: white;
 }
 
 
