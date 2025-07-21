@@ -43,6 +43,7 @@ img {
 
 .flex {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .header-section {
@@ -185,6 +186,7 @@ img {
 .section-heading {
     font-size: 60px;
     font-weight: 500;
+    color: #000
 }
 
 .section-heading em {
@@ -391,15 +393,24 @@ img {
     padding-top: 26px;
 }
 
+.patient-item {
+    gap: 8px
+}
+
 .patient-image-container {
     flex: 1;
-    max-width: 400PX;
+    max-width: 318px;
 }
 
 .patient-description {
     flex-direction: column;
     gap: 24px;
     padding: 40px 24px;
+    background-color: #F5F5F5;
+    border-radius: 20px;
+    flex: 2;
+    max-width: 546px;
+    justify-content: space-between;
 }
 
 .patient-quote {
@@ -428,6 +439,12 @@ img {
 
 .horizontal-feature-item-group > .features-item {
     border-radius: 20px;
+}
+
+.patients-list {
+    padding-block: 40px;
+    overflow: hidden;
+    gap: 40px 24px;
 }
 
 
