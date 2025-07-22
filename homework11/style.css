@@ -1,5 +1,5 @@
 :root {
-    font-size: 16px;
+    font-size: 18px;
     font-family: Inter, Helvetica, sans-serif;
     box-sizing: border-box;
     --primary-color: #2F80ED;
@@ -43,7 +43,6 @@ img {
 
 .flex {
     display: flex;
-    flex-wrap: wrap;
 }
 
 .header-section {
@@ -71,7 +70,6 @@ img {
 }
 
 .hero-badge {
-    gap: 16px;
     padding: 15px 25px;
     align-items: center;
     background-color: #F2F7FF;
@@ -93,6 +91,8 @@ img {
 
 .hero-image {
     width: 100%;
+    height: auto;
+    max-height: 550px;
     object-fit: cover;
     border-radius: 10px;
 }
@@ -123,6 +123,12 @@ img {
 
 .hero-section-item {
     flex: 1 1 50%;
+
+}
+.hero-image-wrapper {
+    width: 50%;
+    position: relative;
+    height: max-content;
 }
 
 
@@ -137,6 +143,7 @@ img {
     top: -37px;
     background-color: white;
     max-width: 295px;
+    z-index: 2;
 }
 
 .meetings-number {
@@ -148,17 +155,12 @@ img {
     text-align: center;
 }
 
-.hero-image-container {
-    position: relative;
-}
-
 .patient {
     flex-direction: column;
     position: absolute;
     left: -38px;
     bottom: -71px;
     padding: 16px;
-    gap: 16px;
     align-items: center;
     border: 1px solid #ECF4FD;
     border-radius: 20px;
@@ -179,8 +181,9 @@ img {
     color: var(--secondary-color);
 }
 
-.doctors-expertise-section {
+.section-block {
     margin-block: 120px;
+
 }
 
 .section-heading {
@@ -212,7 +215,7 @@ img {
     flex-wrap: wrap;
 }
 
-.doctors-expertise-container {
+.see-all-container {
     justify-content: space-between;
     align-items: center;
 }
@@ -241,7 +244,7 @@ img {
     margin-bottom: 24px;
 }
 
-.doctors-expertise-item-link {
+.primary-icon-link {
     display: flex;
     gap: 8px;
     align-items: center;
@@ -265,11 +268,6 @@ img {
     height: 46px;
     border-radius: 50%;
     border: none;
-}
-
-
-.doctors-expertise-section {
-    margin-block: 120px;
 }
 
 
@@ -318,10 +316,6 @@ img {
     margin-block: 120px;
 }
 
-.features-section {
-    margin-block: 120px;
-}
-
 .features-container {
     gap: 8px;
     flex-wrap: wrap;
@@ -350,7 +344,6 @@ img {
 
 .big-feature-item {
     flex: 2;
-    gap: 8px;
     flex-direction: column;
 }
 
@@ -371,7 +364,6 @@ img {
 
 .horizontal-feature-item-group {
     flex-direction: row;
-    gap: 8px;
 }
 
 .features-section-heading {
@@ -530,5 +522,45 @@ img {
     fill : white;
 }
 
+.flex-column{
+    flex-direction: column;
+}
 
+.test-img {
+    max-width: 425px;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
 
+.primary-color{
+    color: var(--primary-color);
+}
+
+.gap-16{
+    gap: 16px;
+}
+
+.gap-8{
+    gap: 8px;
+}
+
+.diet-heading{
+    font-size: 24px;
+    font-weight: 500;
+    color: #111;
+}
+
+.diet-list{
+    overflow: hidden;
+    gap: 24px;
+    padding-block: 40px;
+}
+
+.diet-item{
+   width: 35%;
+}
+
+.health-section{
+
+}

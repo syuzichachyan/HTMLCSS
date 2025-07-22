@@ -44,7 +44,7 @@
                 <img alt="hero image" class="star-image" height="20" src="./icons/star.svg" width="20">
                 <p>Rated #1 choice for healthcare appointments by users</p>
             </div>
-            <div>
+            <div class="hero-section-item">
                 <h1 class="hero-heading">
                     Connecting You <em>to</em> Better Health
                 </h1>
@@ -65,30 +65,28 @@
                 </div>
             </div>
         </div>
-        <div class="hero-section-item hero-image-container">
-            <div class="flex meetings">
-                <span class="meetings-number">
-                    10k+
-                </span>
-                <p class="meetings-text">
-                    Hours of patient Meetings
-                </p>
-            </div>
             <div class="hero-image-wrapper">
+                <div class="flex meetings ">
+                    <span class="meetings-number">
+                        10k+
+                    </span>
+                    <p class="meetings-text">
+                        Hours of patient Meetings
+                    </p>
+                </div>
                 <img alt="hero image" class="hero-image" height="550px" src="./images/hero.jpg" width="550px">
+                <div class="flex gap-16 patient">
+                    <span class="patient-number">
+                        2.650+
+                    </span>
+                    <p class="patient-text">
+                        Hours of patient Meetings
+                    </p>
+                </div>
             </div>
-            <div class="flex patient">
-                <span class="patient-number">
-                    2.650+
-                </span>
-                <p class="patient-text">
-                    Hours of patient Meetings
-                </p>
-            </div>
-        </div>
     </section>
-    <section class="container doctors-expertise-section">
-        <div class="flex doctors-expertise-container">
+    <section class="container section-block">
+        <div class="flex see-all-container">
             <h2 class="section-heading">
                 Choose Doctor's <em>Expertise</em>
             </h2>
@@ -108,7 +106,7 @@
                     <p class="doctors-expertise-item-text">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                     </p>
-                    <a class="doctors-expertise-item-link" href="#">
+                    <a class="primary-icon-link" href="#">
                         Book Consultation
                         <img alt="arrow" class="doctors-expertise-item-arrow" height="15"
                              src="./icons/arrow-next.svg" width="18">
@@ -128,7 +126,7 @@
                     <p class="doctors-expertise-item-text">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                     </p>
-                    <a class="doctors-expertise-item-link" href="#">
+                    <a class="primary-icon-link" href="#">
                         Book Consultation
                         <img alt="arrow" class="doctors-expertise-item-arrow" height="15"
                              src="./icons/arrow-next.svg" width="18">
@@ -148,7 +146,7 @@
                     <p class="doctors-expertise-item-text">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                     </p>
-                    <a class="doctors-expertise-item-link" href="#">
+                    <a class="primary-icon-link" href="#">
                         Book Consultation
                         <img alt="arrow" class="doctors-expertise-item-arrow" height="15"
                              src="./icons/arrow-next.svg" width="18">
@@ -168,7 +166,7 @@
                     <p class="doctors-expertise-item-text">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                     </p>
-                    <a class="doctors-expertise-item-link" href="#">
+                    <a class="primary-icon-link" href="#">
                         Book Consultation
                         <img alt="arrow" class="doctors-expertise-item-arrow" height="15"
                              src="./icons/arrow-next.svg" width="18">
@@ -188,7 +186,7 @@
                     <p class="doctors-expertise-item-text">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                     </p>
-                    <a class="doctors-expertise-item-link" href="#">
+                    <a class="primary-icon-link" href="#">
                         Book Consultation
                         <img alt="arrow" class="doctors-expertise-item-arrow" height="15"
                              src="./icons/arrow-next.svg" width="18">
@@ -212,11 +210,9 @@
         </div>
     </section>
     <section class="flex container about-us-section">
-        <div class="about-us-image">
-            <img alt="doctors" height="410" src="images/doctors.jpg" width="621"/>
-        </div>
+            <img class="about-us-image"  alt="doctors" height="410" src="images/doctors.jpg" width="621"/>
         <div class="about-us-description">
-            <div class="flex hero-badge">
+            <div class="flex gap-16 hero-badge">
                 <img alt="hero image" class="star-image" height="20" src="./icons/star.svg" width="20">
                 <p>Rated #1 choice for healthcare appointments by users</p>
             </div>
@@ -236,10 +232,10 @@
             </div>
         </div>
     </section>
-    <section class="container features-section">
+    <section class="container section-block">
         <h2 class="section-heading features-section-heading">Explore Our App's <em>Features</em></h2>
         <div class="flex features-container">
-            <div class="flex big-feature-item">
+            <div class="flex gap-8 big-feature-item">
                 <div class="flex big-horizontal-feature-item">
                     <div class="features-item">
                         <div class="icon-container">
@@ -258,7 +254,7 @@
                              width="320px">
                     </div>
                 </div>
-                <div class="flex horizontal-feature-item-group">
+                <div class="flex gap-8 horizontal-feature-item-group">
                     <div class="features-item ">
                         <div class="icon-container">
                             <img alt="icon" height="33" src="./icons/copy.svg" width="28">
@@ -305,9 +301,9 @@
             </div>
         </div>
     </section>
-    <section class="patients-section">
-        <h2 class="container section-heading">Testimonials From Our <em>Satisfied</em> Patients</h2>
-        <ul class="flex container patients-list">
+    <section class="container section-block">
+        <h2 class="section-heading">Testimonials From Our <em>Satisfied</em> Patients</h2>
+        <ul class="flex patients-list">
             <li>
                 <figure class="flex patient-item">
                     <div class="patient-image-container">
@@ -346,7 +342,109 @@
 
             </li>
         </ul>
-        <div class="flex container carousel-icon-group">
+        <div class="flex carousel-icon-group">
+            <button class="carousel-icon">
+                <svg fill="none" height="46" viewBox="0 0 46 46" width="46" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M23 0.25C18.5005 0.25 14.102 1.58426 10.3608 4.08407C6.61957 6.58387 3.70364 10.1369 1.98175 14.294C0.259857 18.451 -0.190669 23.0252 0.687145 27.4383C1.56496 31.8514 3.73169 35.905 6.91333 39.0867C10.095 42.2683 14.1486 44.435 18.5617 45.3129C22.9748 46.1907 27.549 45.7402 31.7061 44.0183C35.8631 42.2964 39.4161 39.3804 41.9159 35.6392C44.4157 31.898 45.75 27.4995 45.75 23C45.7436 16.9683 43.3447 11.1854 39.0797 6.92035C34.8146 2.65528 29.0317 0.25637 23 0.25ZM31.75 24.75H18.4741L22.4881 28.7619C22.6507 28.9245 22.7797 29.1175 22.8677 29.3299C22.9557 29.5424 23.001 29.7701 23.001 30C23.001 30.2299 22.9557 30.4576 22.8677 30.6701C22.7797 30.8825 22.6507 31.0755 22.4881 31.2381C22.3255 31.4007 22.1325 31.5297 21.9201 31.6177C21.7076 31.7057 21.4799 31.751 21.25 31.751C21.0201 31.751 20.7924 31.7057 20.5799 31.6177C20.3675 31.5297 20.1745 31.4007 20.0119 31.2381L13.0119 24.2381C12.8492 24.0756 12.7201 23.8826 12.632 23.6701C12.544 23.4577 12.4986 23.23 12.4986 23C12.4986 22.77 12.544 22.5423 12.632 22.3299C12.7201 22.1174 12.8492 21.9244 13.0119 21.7619L20.0119 14.7619C20.3403 14.4335 20.7856 14.249 21.25 14.249C21.7144 14.249 22.1598 14.4335 22.4881 14.7619C22.8165 15.0902 23.001 15.5356 23.001 16C23.001 16.4644 22.8165 16.9098 22.4881 17.2381L18.4741 21.25H31.75C32.2141 21.25 32.6593 21.4344 32.9874 21.7626C33.3156 22.0907 33.5 22.5359 33.5 23C33.5 23.4641 33.3156 23.9092 32.9874 24.2374C32.6593 24.5656 32.2141 24.75 31.75 24.75Z"
+                          fill="#CCCCCC"/>
+                </svg>
+            </button>
+            <button class="carousel-icon">
+                <svg fill="none" height="46" viewBox="0 0 46 46" width="46" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M23 0.25C18.5005 0.25 14.102 1.58426 10.3608 4.08407C6.61957 6.58387 3.70364 10.1369 1.98175 14.294C0.259857 18.451 -0.190669 23.0252 0.687145 27.4383C1.56496 31.8514 3.73169 35.905 6.91333 39.0867C10.095 42.2683 14.1486 44.435 18.5617 45.3129C22.9748 46.1907 27.549 45.7402 31.7061 44.0183C35.8631 42.2964 39.4161 39.3804 41.9159 35.6392C44.4157 31.898 45.75 27.4995 45.75 23C45.7436 16.9683 43.3447 11.1854 39.0797 6.92035C34.8146 2.65528 29.0317 0.25637 23 0.25ZM31.75 24.75H18.4741L22.4881 28.7619C22.6507 28.9245 22.7797 29.1175 22.8677 29.3299C22.9557 29.5424 23.001 29.7701 23.001 30C23.001 30.2299 22.9557 30.4576 22.8677 30.6701C22.7797 30.8825 22.6507 31.0755 22.4881 31.2381C22.3255 31.4007 22.1325 31.5297 21.9201 31.6177C21.7076 31.7057 21.4799 31.751 21.25 31.751C21.0201 31.751 20.7924 31.7057 20.5799 31.6177C20.3675 31.5297 20.1745 31.4007 20.0119 31.2381L13.0119 24.2381C12.8492 24.0756 12.7201 23.8826 12.632 23.6701C12.544 23.4577 12.4986 23.23 12.4986 23C12.4986 22.77 12.544 22.5423 12.632 22.3299C12.7201 22.1174 12.8492 21.9244 13.0119 21.7619L20.0119 14.7619C20.3403 14.4335 20.7856 14.249 21.25 14.249C21.7144 14.249 22.1598 14.4335 22.4881 14.7619C22.8165 15.0902 23.001 15.5356 23.001 16C23.001 16.4644 22.8165 16.9098 22.4881 17.2381L18.4741 21.25H31.75C32.2141 21.25 32.6593 21.4344 32.9874 21.7626C33.3156 22.0907 33.5 22.5359 33.5 23C33.5 23.4641 33.3156 23.9092 32.9874 24.2374C32.6593 24.5656 32.2141 24.75 31.75 24.75Z"
+                          fill="#CCCCCC"/>
+                </svg>
+            </button>
+        </div>
+    </section>
+    <section class="container section-block">
+        <div class="flex see-all-container">
+            <h2 class="section-heading">Expert <em>Health</em> Advice and Updates</h2>
+            <p class="see-all"><a href="#">See All</a></p>
+        </div>
+        <ul class="flex diet-list">
+            <li class="diet-item">
+                <figure class="flex flex-column gap-16">
+                    <img src="icons/food.png" height="300" width="424" alt="food" class="test-img" />
+                    <figcaption class="flex gap-16 flex-column">
+                        <div class="flex gap-16">
+                            <p class="primary-color">Diet Tips</p>
+                            <time datetime="2024-04-28">28 April 2024</time>
+                        </div>
+                        <div class="flex flex-column gap-16">
+                            <h3 class="diet-heading">Diet Tips for a Healthier Lifestyle</h3>
+                            <p>Maintaining a healthy diet is crucial for overall well-being and can prevent numerous health issues.</p>
+                        </div>
+                        <a class="primary-icon-link" href="#">
+                            Read More
+                            <img alt="arrow" class="doctors-expertise-item-arrow" height="15"
+                                 src="./icons/arrow-next.svg" width="18">
+                        </a>
+                    </figcaption>
+                </figure>
+            </li>
+            <li class="diet-item">
+                <figure>
+                    <img src="icons/food.png" height="300" width="424" alt="food" class="test-img" />
+                    <figcaption class="flex gap-16 flex-column">
+                        <div class="flex gap-16">
+                            <p class="primary-color">Diet Tips</p>
+                            <time datetime="2024-04-28">28 April 2024</time>
+                        </div>
+                        <div class="flex flex-column gap-16">
+                            <h3 class="diet-heading">Diet Tips for a Healthier Lifestyle</h3>
+                            <p>Maintaining a healthy diet is crucial for overall well-being and can prevent numerous health issues.</p>
+                        </div>
+                        <a class="primary-icon-link" href="#">
+                            Read More
+                            <img alt="arrow" class="doctors-expertise-item-arrow" height="15"
+                                 src="./icons/arrow-next.svg" width="18">
+                        </a>
+                    </figcaption>
+                </figure>
+            </li>
+            <li class="diet-item">
+                <figure>
+                    <img src="icons/food.png" height="300" width="424" alt="food" class="test-img" />
+                    <figcaption class="flex gap-16 flex-column">
+                        <div class="flex gap-16">
+                            <p class="primary-color">Diet Tips</p>
+                            <time datetime="2024-04-28">28 April 2024</time>
+                        </div>
+                        <div class="flex flex-column gap-16">
+                            <h3 class="diet-heading">Diet Tips for a Healthier Lifestyle</h3>
+                            <p>Maintaining a healthy diet is crucial for overall well-being and can prevent numerous health issues.</p>
+                        </div>
+                        <a class="primary-icon-link" href="#">
+                            Read More
+                            <img alt="arrow" class="doctors-expertise-item-arrow" height="15"
+                                 src="./icons/arrow-next.svg" width="18">
+                        </a>
+                    </figcaption>
+                </figure>
+            </li>
+            <li class="diet-item">
+                <figure>
+                    <img src="icons/food.png" height="300" width="424" alt="food" class="test-img" />
+                    <figcaption class="flex gap-16 flex-column">
+                        <div class="flex gap-16">
+                            <p class="primary-color">Diet Tips</p>
+                            <time datetime="2024-04-28">28 April 2024</time>
+                        </div>
+                        <div class="flex flex-column gap-16">
+                            <h3 class="diet-heading">Diet Tips for a Healthier Lifestyle</h3>
+                            <p>Maintaining a healthy diet is crucial for overall well-being and can prevent numerous health issues.</p>
+                        </div>
+                        <a class="primary-icon-link" href="#">
+                            Read More
+                            <img alt="arrow" class="doctors-expertise-item-arrow" height="15"
+                                 src="./icons/arrow-next.svg" width="18">
+                        </a>
+                    </figcaption>
+                </figure>
+            </li>
+        </ul>
+        <div class="flex carousel-icon-group">
             <button class="carousel-icon">
                 <svg fill="none" height="46" viewBox="0 0 46 46" width="46" xmlns="http://www.w3.org/2000/svg">
                     <path d="M23 0.25C18.5005 0.25 14.102 1.58426 10.3608 4.08407C6.61957 6.58387 3.70364 10.1369 1.98175 14.294C0.259857 18.451 -0.190669 23.0252 0.687145 27.4383C1.56496 31.8514 3.73169 35.905 6.91333 39.0867C10.095 42.2683 14.1486 44.435 18.5617 45.3129C22.9748 46.1907 27.549 45.7402 31.7061 44.0183C35.8631 42.2964 39.4161 39.3804 41.9159 35.6392C44.4157 31.898 45.75 27.4995 45.75 23C45.7436 16.9683 43.3447 11.1854 39.0797 6.92035C34.8146 2.65528 29.0317 0.25637 23 0.25ZM31.75 24.75H18.4741L22.4881 28.7619C22.6507 28.9245 22.7797 29.1175 22.8677 29.3299C22.9557 29.5424 23.001 29.7701 23.001 30C23.001 30.2299 22.9557 30.4576 22.8677 30.6701C22.7797 30.8825 22.6507 31.0755 22.4881 31.2381C22.3255 31.4007 22.1325 31.5297 21.9201 31.6177C21.7076 31.7057 21.4799 31.751 21.25 31.751C21.0201 31.751 20.7924 31.7057 20.5799 31.6177C20.3675 31.5297 20.1745 31.4007 20.0119 31.2381L13.0119 24.2381C12.8492 24.0756 12.7201 23.8826 12.632 23.6701C12.544 23.4577 12.4986 23.23 12.4986 23C12.4986 22.77 12.544 22.5423 12.632 22.3299C12.7201 22.1174 12.8492 21.9244 13.0119 21.7619L20.0119 14.7619C20.3403 14.4335 20.7856 14.249 21.25 14.249C21.7144 14.249 22.1598 14.4335 22.4881 14.7619C22.8165 15.0902 23.001 15.5356 23.001 16C23.001 16.4644 22.8165 16.9098 22.4881 17.2381L18.4741 21.25H31.75C32.2141 21.25 32.6593 21.4344 32.9874 21.7626C33.3156 22.0907 33.5 22.5359 33.5 23C33.5 23.4641 33.3156 23.9092 32.9874 24.2374C32.6593 24.5656 32.2141 24.75 31.75 24.75Z"
