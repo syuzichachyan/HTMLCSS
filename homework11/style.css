@@ -523,6 +523,11 @@ img {
 
 .btn-group-item-secondary-white {
     color: white;
+    border: 1px solid white;
+}
+
+.btn-group-item-secondary-white svg path {
+    fill : white;
 }
 
 
