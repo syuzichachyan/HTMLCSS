@@ -4,6 +4,8 @@
     box-sizing: border-box;
     --primary-color: #2F80ED;
     --secondary-color: #808080;
+    --min-nature: #ffffff;
+    --max-nature: #000000;
     color: var(--secondary-color);
 }
 
@@ -13,6 +15,7 @@
     padding: 0;
 }
 
+/* hover, active */
 a {
     text-decoration: none;
     color: inherit;
@@ -27,41 +30,77 @@ img {
     object-fit: cover;
 }
 
-.btn {
-    background-color: var(--primary-color);
-    cursor: pointer;
-    border-radius: 100px;
-    border: none;
-    color: white;
-    font-weight: 500;
-    font-size: 20px;
+.active-color {
+    color: var(--primary-color);
 }
 
 .container {
-    margin: 0 60px;
+    padding: 120px 60px;
 }
 
 .flex {
     display: flex;
 }
 
-.header-section {
-    justify-content: space-between;
-    padding: 20px 45px;
+.flex-center-between {
+    display: flex;
     align-items: center;
-    gap: 48px
+    justify-content: space-between;
+}
+
+.flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Button Components Start */
+.btn {
+    padding: 12px 48px;
+    border-radius: 100px;
+    font-weight: 500;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.btn-primary {
+    border: 0;
+    background-color: var(--primary-color);
+    color: var(--min-nature);
+}
+
+.btn-secondary {
+    gap: 8px;
+    border: 1px solid var(--primary-color);
+    background: transparent;
+    color: var(--primary-color);
+}
+
+.btn-secondary-white {
+    color: var(--min-nature);
+    border: 1px solid white;
+}
+
+.btn-secondary-white svg path {
+    fill: var(--min-nature);
+}
+/* Button Components end */
+
+/* Header Start */
+.header-section {
+    height: 120px;
+    gap: 48px;
+    padding: 0 80px;
 }
 
 .header-nav {
     margin-left: 45px;
-
 }
 
 .header-nav-list {
-    justify-content: space-between;
     gap: 48px;
-    white-space: nowrap;
     font-size: 20px;
+    white-space: nowrap;
 }
 
 .reg-btn {
@@ -69,12 +108,17 @@ img {
     padding: 12px 64px;
 }
 
+/*
+ Hero Section Start
+*/
+
 .hero-badge {
-    padding: 15px 25px;
     align-items: center;
+    padding: 15px 25px;
+    margin-bottom: 40px;
+    border-radius: 30px;
     background-color: #F2F7FF;
     color: var(--primary-color);
-    border-radius: 30px;
 }
 
 .hero-heading {
@@ -85,10 +129,6 @@ img {
     margin-bottom: 16px;
 }
 
-.hero-heading em {
-    color: var(--primary-color);
-}
-
 .hero-image {
     width: 100%;
     height: auto;
@@ -97,34 +137,20 @@ img {
     border-radius: 10px;
 }
 
-.btn-group-item {
-    padding: 12px 48px;
-    font-size: 20px;
-}
-
 .btn-group {
     gap: 24px;
     margin-top: 64px;
 }
 
-.btn-group-item-secondary {
-    background-color: transparent;
-    color: var(--primary-color);
-    border: 1px solid var(--primary-color);
-    gap: 8px;
-    align-items: center;
-}
-
 .hero-section {
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin: 80px 118px 220px 60px;
+    gap: 38px;
+    padding: 100px 118px 100px 60px;
 }
 
 .hero-section-item {
     flex: 1 1 50%;
-
 }
+
 .hero-image-wrapper {
     width: 50%;
     position: relative;
@@ -181,19 +207,15 @@ img {
     color: var(--secondary-color);
 }
 
-.section-block {
-    margin-block: 120px;
+/*.section-block {*/
+/*    margin-block: 120px;*/
 
-}
+/*}*/
 
 .section-heading {
     font-size: 60px;
     font-weight: 500;
     color: #000
-}
-
-.section-heading em {
-    color: var(--primary-color);
 }
 
 .doctors-expertise-section {
@@ -215,10 +237,10 @@ img {
     flex-wrap: wrap;
 }
 
-.see-all-container {
-    justify-content: space-between;
-    align-items: center;
-}
+/*.see-all-container {*/
+/*    justify-content: space-between;*/
+/*    align-items: center;*/
+/*}*/
 
 .icon-container {
     height: 56px;
@@ -333,6 +355,7 @@ img {
     color: var(--secondary-color);
 }
 
+/*Duplicated styles with  doctors-expertise-item    */
 .features-item {
     padding: 48px 32px;
     display: flex;
@@ -464,6 +487,7 @@ img {
     color: #CCCCCC;
 }
 
+/*es kara xaxtvi nestedutyun@x*/
 .footer-item + .footer-item {
     margin-top: 16px;
 }
@@ -490,6 +514,7 @@ img {
     max-width: 425px;
 }
 
+/*Duplicate */
 .footer-links {
     flex: 2;
     max-width: 680px;
@@ -513,16 +538,7 @@ img {
     color: white;
 }
 
-.btn-group-item-secondary-white {
-    color: white;
-    border: 1px solid white;
-}
-
-.btn-group-item-secondary-white svg path {
-    fill : white;
-}
-
-.flex-column{
+.flex-column {
     flex-direction: column;
 }
 
@@ -533,34 +549,35 @@ img {
     object-fit: contain;
 }
 
-.primary-color{
+.primary-color {
     color: var(--primary-color);
 }
 
-.gap-16{
+.gap-16 {
     gap: 16px;
 }
 
-.gap-8{
+.gap-8 {
     gap: 8px;
 }
 
-.diet-heading{
+.diet-heading {
     font-size: 24px;
     font-weight: 500;
     color: #111;
 }
 
-.diet-list{
+.diet-list {
     overflow: hidden;
     gap: 24px;
     padding-block: 40px;
 }
 
-.diet-item{
-   width: 35%;
+.diet-item {
+    width: 35%;
 }
 
-.health-section{
+/*unused class*/
+.health-section {
 
 }
