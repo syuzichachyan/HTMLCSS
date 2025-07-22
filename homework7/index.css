@@ -33,6 +33,6 @@ body * + * {
     background-color: white;
 }
 
-.btn-primary {
+.btn-group-item {
     background-color: blue;
 }
