@@ -176,6 +176,15 @@ p {
     object-fit: cover;
 }
 
+
+.hidden {
+    display: none !important;
+}
+
+.mobile-nav {
+    display: none;
+}
+
 @media (max-width: 768px) {
     h1 {
         font-size: 1.75rem;
@@ -229,5 +238,27 @@ p {
         width: 100%;
     }
 
+    .mobile-nav {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        top: 62px;
+        right: 0;
+        height: 100vh;
+        background-color: var(--neutral3);
+        z-index: 9;
+    }
+
+    .mobile-nav-link-item {
+        padding: 1rem 0.5rem 1rem 0.75rem;
+    }
+
+    .mobile-nav-btn-container {
+        flex-direction: column;
+        gap: 12px
+
+    }
+
 }
+
 

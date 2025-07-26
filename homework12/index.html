@@ -24,6 +24,7 @@
     <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
           rel="stylesheet">
+    <script defer src="index.js"></script>
 </head>
 <body>
 <header class="flex-between header">
@@ -46,6 +47,18 @@
         <img alt="hamburger" class="hamburger" height="14" src="icons/hamburger.svg" width="20">
     </nav>
 </header>
+<nav class="mobile-nav hidden flex">
+    <a class="mobile-nav-link-item" href="#"><p class="p2">For Students</p></a>
+    <a class="mobile-nav-link-item" href="#"><p class="p2">For Tutors</p></a>
+    <div class="flex mobile-nav-btn-container">
+        <button class="secondary-btn btn-padding" type="button">
+            Log In
+        </button>
+        <button class="primary-btn btn-padding" type="button">
+            Sign up
+        </button>
+    </div>
+</nav>
 <main>
     <section class="flex tutors-section">
         <div class="flex-1">
@@ -67,3 +80,4 @@
 </main>
 </body>
 </html>
+
