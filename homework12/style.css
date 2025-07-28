@@ -247,11 +247,60 @@ p {
     position: relative;
 }
 
-.lessons-section-desc-img {
+.page {
     position: absolute;
     top: -4rem;
     right: 0;
 }
+
+.learn-section {
+    padding-block: 4rem;
+    background-color: var(--neutral3);
+}
+
+.learn-section-img {
+    path {
+        fill: var(--neutral2);
+    }
+
+    transform: skewY(-2deg);
+}
+
+.card-skew-wrapper {
+    background: transparent;
+    width: 500px;
+    border-radius: 30px;
+    overflow: hidden;
+}
+
+.card {
+    background-color: #8B34F4;
+    color: white;
+    padding: 40px;
+    border-radius: 30px;
+    clip-path: path("M 89% 0 A 10,10 0,0,0 100% 8% A 10,10 0,0,0 100% 91% A 10,10 0,0,0 91% 100% A 10,10 0,0,0 10% 100% A 10,10 0,0,0 1% 93% A 10,10 0,0,0 8% 15% A 10,10 0,0,0 18% 6% Z");
+}
+
+/*.card h2 {*/
+/*    font-size: 28px;*/
+/*    margin-bottom: 20px;*/
+/*}*/
+
+/*.card p {*/
+/*    font-size: 16px;*/
+/*    line-height: 1.6;*/
+/*    margin-bottom: 30px;*/
+/*}*/
+
+/*.card button {*/
+/*    background-color: #FFD12A;*/
+/*    color: black;*/
+/*    padding: 12px 20px;*/
+/*    border: none;*/
+/*    border-radius: 6px;*/
+/*    font-weight: bold;*/
+/*    cursor: pointer;*/
+/*}*/
 
 @media (max-width: 768px) {
     h1 {
@@ -340,7 +389,7 @@ p {
         margin-inline: 1rem;
     }
 
-    .lessons-section-desc-img {
+    .page {
         width: 42px;
         height: 42px;
     }
