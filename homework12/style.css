@@ -2,11 +2,12 @@
     font-size: 16px;
     font-family: 'Montserrat', sans-serif;
     box-sizing: border-box;
-    --accent: #7300ff;
+    --accent: #8337DF;
     --neutral0: #000000;
     --neutral1: #333333;
     --neutral2: #f8f8f8;
     --neutral3: #ffffff;
+    --neutral4: #263DCD0A
 }
 
 *, ::before, ::after {
@@ -97,6 +98,10 @@ p {
     justify-content: center;
 }
 
+.flex-column {
+    flex-direction: column;
+}
+
 .primary-btn {
     background-color: var(--accent);
     color: var(--neutral3);
@@ -138,7 +143,6 @@ p {
 }
 
 .tutors-section {
-    max-width: 1200px;
     gap: 20px;
     width: 80%;
     margin: 5rem auto;
@@ -183,6 +187,70 @@ p {
 
 .mobile-nav {
     display: none;
+}
+
+.mySwiper {
+    margin-top: 34px;
+    margin-bottom: 87px;
+}
+
+.swiper-slide-img {
+    margin-top: -32px;
+}
+
+.swiper-slide-content {
+    display: flex;
+    flex-direction: column;
+    gap: 8px
+}
+
+.swiper-wrapper {
+    padding-top: 32px;
+}
+
+.swiper-slide {
+    background-color: var(--neutral3);
+    width: 294px !important;
+    border-radius: 29px;
+    padding-left: 28px;
+    padding-right: 26px;
+    padding-bottom: 38px;
+    box-sizing: border-box;
+}
+
+.lessons-section {
+    padding-block: 4rem;
+    background-color: var(--neutral4);
+}
+
+.lessons-section .primary-btn {
+    padding: 0.8125rem 1.25rem;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.lessons-section-text {
+    margin-bottom: 2rem;
+    margin-top: 0.75rem;
+}
+
+.lessons-section-desc {
+    padding-bottom: 28px;
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.lessons-section-desc {
+    position: relative;
+}
+
+.lessons-section-desc-img {
+    position: absolute;
+    top: -4rem;
+    right: 0;
 }
 
 @media (max-width: 768px) {
@@ -257,6 +325,24 @@ p {
         flex-direction: column;
         gap: 12px
 
+    }
+
+    .lessons-section-desc {
+        text-align: unset;
+    }
+
+    .lessons-section-desc .primary-btn {
+        width: 100%;
+    }
+
+    .lessons-section-desc {
+        width: auto;
+        margin-inline: 1rem;
+    }
+
+    .lessons-section-desc-img {
+        width: 42px;
+        height: 42px;
     }
 
 }
