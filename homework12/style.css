@@ -253,54 +253,60 @@ p {
     right: 0;
 }
 
-.learn-section {
+.learn-section-container {
     padding-block: 4rem;
+    margin: 0 auto;
+    width: 80%;
     background-color: var(--neutral3);
+    position: relative;
 }
 
 .learn-section-img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    max-width: 559px;
+}
+
+.learn-section-page {
+    position: absolute;
+    top: 0;
+    right: 0;
+
     path {
         fill: var(--neutral2);
     }
-
-    transform: skewY(-2deg);
 }
 
-.card-skew-wrapper {
-    background: transparent;
-    width: 500px;
-    border-radius: 30px;
-    overflow: hidden;
+.learn-section-content {
+    padding-block: 9.375rem 11.875rem;
 }
 
-.card {
+.learn-section-card {
     background-color: #8B34F4;
     color: white;
     padding: 40px;
-    border-radius: 30px;
-    clip-path: path("M 89% 0 A 10,10 0,0,0 100% 8% A 10,10 0,0,0 100% 91% A 10,10 0,0,0 91% 100% A 10,10 0,0,0 10% 100% A 10,10 0,0,0 1% 93% A 10,10 0,0,0 8% 15% A 10,10 0,0,0 18% 6% Z");
+    border-radius: 32px;
+    clip-path: path("M 28 53 A 32,32 0,0,1  58 30 L  658 -2 L  658 340  L  -5 340 Z")
+
 }
 
-/*.card h2 {*/
-/*    font-size: 28px;*/
-/*    margin-bottom: 20px;*/
-/*}*/
+.learn-section-card-bnt {
+    background-color: #FFD12A;
+    color: var(--neutral0);
+    font-size: 18px;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 1.25rem 2rem;
 
-/*.card p {*/
-/*    font-size: 16px;*/
-/*    line-height: 1.6;*/
-/*    margin-bottom: 30px;*/
-/*}*/
+}
 
-/*.card button {*/
-/*    background-color: #FFD12A;*/
-/*    color: black;*/
-/*    padding: 12px 20px;*/
-/*    border: none;*/
-/*    border-radius: 6px;*/
-/*    font-weight: bold;*/
-/*    cursor: pointer;*/
-/*}*/
+.learn-section-card-desc {
+    margin-top: 0.875rem;
+    margin-bottom: 1.5rem;
+}
 
 @media (max-width: 768px) {
     h1 {
@@ -392,6 +398,10 @@ p {
     .page {
         width: 42px;
         height: 42px;
+    }
+
+    .learn-section-content {
+        flex-direction: column;
     }
 
 }
