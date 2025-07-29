@@ -40,18 +40,39 @@ img {
 
 .flex {
     display: flex;
+    /*flex-wrap: wrap;*/
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
 }
 
 .flex-center-between {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .flex-center {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.flex-center-start {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.half-item {
+    flex: 1 1 50%;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
 }
 
 /* Button Components Start */
@@ -84,6 +105,7 @@ img {
 .btn-secondary-white svg path {
     fill: var(--min-nature);
 }
+
 /* Button Components end */
 
 /* Header Start */
@@ -113,9 +135,7 @@ img {
 */
 
 .hero-badge {
-    align-items: center;
     padding: 15px 25px;
-    margin-bottom: 40px;
     border-radius: 30px;
     background-color: #F2F7FF;
     color: var(--primary-color);
@@ -145,10 +165,6 @@ img {
 .hero-section {
     gap: 38px;
     padding: 100px 118px 100px 60px;
-}
-
-.hero-section-item {
-    flex: 1 1 50%;
 }
 
 .hero-image-wrapper {
@@ -213,6 +229,7 @@ img {
 /*}*/
 
 .section-heading {
+    margin-bottom: 40px;
     font-size: 60px;
     font-weight: 500;
     color: #000
@@ -229,12 +246,26 @@ img {
     font-weight: 500;
 }
 
+/*
+.card-list
+.card-list__item
+.cards-heading
+*/
+.doctors-expertise-list {
+    gap: 24px;
+    overflow: hidden;
+    margin-bottom: 40px;
+    flex-wrap: nowrap;
+}
+
 .doctors-expertise-item {
     padding: 38px 24px;
     background-color: #F7F7F7;
     border-radius: 20px;
-    flex: 0 0 424px;
-    flex-wrap: wrap;
+    flex: 1 1 424px;
+    /*flex-wrap: wrap;*/
+    min-width: 296px;
+    max-width: 424px;
 }
 
 /*.see-all-container {*/
@@ -245,11 +276,8 @@ img {
 .icon-container {
     height: 56px;
     width: 56px;
-    background-color: #E6E6E6;
     border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    background-color: #E6E6E6;
 }
 
 .doctors-expertise-item-heading {
@@ -268,21 +296,11 @@ img {
 
 .primary-icon-link {
     display: flex;
-    gap: 8px;
     align-items: center;
+    gap: 8px;
     font-size: 20px;
     font-weight: 500;
     color: var(--primary-color);
-}
-
-.doctors-expertise-list {
-    gap: 24px;
-    overflow: hidden;
-    margin-block: 40px
-}
-
-.carousel-icon-group {
-    justify-content: space-between;
 }
 
 .carousel-icon {
@@ -292,30 +310,21 @@ img {
     border: none;
 }
 
-
-.about-us-image {
-    flex: 1 1 50%;
-    width: 100%;
+.carousel-icon--rotated {
+    transform: rotate(180deg);
 }
 
-.about-us-description {
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-    flex: 1 1 50%;
+.carousel-icon--rotated svg path {
+    fill: var(--primary-color);
+}
+
+.about-us-image {
+    width: 100%;
 }
 
 .about-us-text {
     font-size: 32px;
     color: #111;
-}
-
-.about-us-statistics-container {
-    display: flex;
-    gap: 40px;
-    justify-content: space-between;
-    margin-block: 40px;
-    flex-wrap: wrap;
 }
 
 .about-us-statistics-value {
@@ -331,11 +340,9 @@ img {
     text-align: center;
 }
 
-.about-us-section {
-    justify-content: space-between;
-    gap: 40px;
-    flex: 1 1 50%;
-    margin-block: 120px;
+.image-wrapper {
+    border-radius: 20px;
+    display: block;
 }
 
 .features-container {
@@ -358,8 +365,6 @@ img {
 /*Duplicated styles with  doctors-expertise-item    */
 .features-item {
     padding: 48px 32px;
-    display: flex;
-    flex-direction: column;
     gap: 24px;
     background-color: #F5F5F5;
     flex: 1 1 0;
@@ -390,7 +395,6 @@ img {
 }
 
 .features-section-heading {
-    text-align: center;
     margin-bottom: 40px;
 }
 
@@ -457,7 +461,7 @@ img {
 }
 
 .patients-list {
-    padding-block: 40px;
+    margin-bottom: 40px;
     overflow: hidden;
     gap: 40px 24px;
 }
@@ -538,10 +542,6 @@ img {
     color: white;
 }
 
-.flex-column {
-    flex-direction: column;
-}
-
 .test-img {
     max-width: 425px;
     width: 100%;
@@ -561,6 +561,10 @@ img {
     gap: 8px;
 }
 
+.gap-40 {
+    gap: 40px;
+}
+
 .diet-heading {
     font-size: 24px;
     font-weight: 500;
@@ -570,7 +574,7 @@ img {
 .diet-list {
     overflow: hidden;
     gap: 24px;
-    padding-block: 40px;
+    margin-bottom: 40px;
 }
 
 .diet-item {
@@ -580,4 +584,10 @@ img {
 /*unused class*/
 .health-section {
 
+}
+
+@media screen and (max-width: 762px) {
+    .container {
+        padding: 60px 12px;
+    }
 }
